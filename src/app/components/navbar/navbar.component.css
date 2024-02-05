@@ -1,0 +1,37 @@
+mat-icon{
+    text-align: center;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    transition: ease-in-out 0.3s;
+}
+.h-cyan{
+    transition: ease-in-out 0.3s;
+}
+#nav-cont div{
+    cursor: pointer;
+}
+#nav-cont div:hover > .h-cyan{
+    color: #22D3EE;
+}
+#nav-cont div:hover > mat-icon{
+    color: #22D3EE;
+}
+#nav-cont div i:hover{
+    color: #22D3EE;
+}
+#nav-cont div{
+    display: flex;
+    border-right: 1px solid #22D3EE;
+    align-items: center;
+}
+#nav-cont div i{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.no-pointer{
+    cursor:default !important;
+}
