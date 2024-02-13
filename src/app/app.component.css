@@ -1,13 +1,62 @@
-.half-circle{
-    background-color: #22d3ee;
-    width: 600px;
-    height: 300px;
-    border-radius: 450px 450px 0 0;
-    box-shadow: 0 0 0 10px #22d3ee44,
-    0 0 100px #22d3ee,
-    0 0 200px #22d3ee;
-    overflow: hidden;
+.translate {
+    transform: translate(-50%, -50%);
 }
-.translate{
-    transform: translate(-50%);
+
+.spacer {
+    height: 1000px;
+}
+
+.none {
+    display: none;
+}
+
+#svgText {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/gradient-FZRCWTCT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue',
+    helvetica, arial, sans-serif;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    animation: gradient 10s infinite linear alternate;
+    
+    /* background-size: 200%; */
+}
+@keyframes gradient {
+    0% {
+        background-position: 15% 15%;
+    }
+    12% {
+        background-position: 10% 50%;
+    }
+    25% {
+        background-position: 15% 80%;
+    }
+    37% {
+        background-position: 50% 85%;
+    }
+    50% {
+        background-position: 80% 80%;
+    }
+    62% {
+        background-position: 85% 50%;
+    }
+    74%{
+        background-position: 80% 15%;
+    }
+    86%{
+        background-position: 50% 10%;
+    }
+    100%{
+        background-position: 15% 15%;
+    }
 }

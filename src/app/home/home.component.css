@@ -1,0 +1,19 @@
+.half-circle{
+    background-color: #22d3ee;
+    width: 600px;
+    height: 300px;
+    border-radius: 450px 450px 0 0;
+    box-shadow: 0 0 0 10px #22d3ee44,
+    0 0 100px #22d3ee,
+    0 0 200px #22d3ee;
+    overflow: hidden;
+}
+app-navbar i{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+app-navbar i:hover{
+    color: #22D3EE;
+}

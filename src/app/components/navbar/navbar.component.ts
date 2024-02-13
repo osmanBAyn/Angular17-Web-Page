@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 @Component({
@@ -9,5 +9,4 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
 }
