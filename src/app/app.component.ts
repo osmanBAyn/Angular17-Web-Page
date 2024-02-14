@@ -26,26 +26,18 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [
-    trigger('svgClose',[
-      state('open', style({opacity: 1,transform: 'translateX(0%)'})),
-      state('closed', style({opacity: 0,transform: 'translateX(100%)'})),
-      transition('open => closed', [
-        animate('0.5s')
-      ]),
-      transition('closed => open', [
-        animate('0.5s')
-      ])
-    ])
-  ]
+    trigger('moveLogo', [
+      state('start', style({ left : '0px', top: '0px'})),
+      state('end', style({  })),
+    ]),
+  ],
 })
 export class AppComponent {
   constructor(private ElementRef: ElementRef, private renderer: Renderer2) {}
-  svgClose : boolean = false;
   @ViewChild('home') homeComp!: ElementRef;
   @ViewChild('firstS') firstS!: ElementRef;
   @ViewChild('navbar') navbar!: ElementRef;
   @ViewChild('secondS') secondS!: ElementRef;
-  @ViewChild('tubitechText') tubiText!: ElementRef;
   @ViewChild('tubitechTextSvg') tubiTextSvg!: ElementRef;
   @ViewChild('tubitechLogo') tubiLogo!: ElementRef;
   @HostListener('window:scroll')
@@ -115,16 +107,6 @@ export class AppComponent {
       'opacity',
       `${(y - 300) / 50}`
     );
-    if(y>=400){
-      this.svgClose = true;
-    }
-    else{
-      this.svgClose = false;
-    }
-    this.renderer.setStyle(
-      this.tubiLogo.nativeElement,
-      'margin-left',
-      `${(y - 400) / 2}px`);
+    
   }
-
 }
