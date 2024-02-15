@@ -29,7 +29,7 @@
     -webkit-font-smoothing: antialiased;
     animation: gradient 10s infinite linear alternate;
     
-    /* background-size: 200%; */
+    background-size: 200%;
 }
 @keyframes gradient {
     0% {
