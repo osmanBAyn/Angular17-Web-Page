@@ -21,11 +21,12 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { NewsComponent } from './news/news.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, HomeComponent,AboutComponent,ContactComponent, FooterComponent],
+  imports: [RouterOutlet, NavbarComponent, HomeComponent,AboutComponent,ContactComponent, FooterComponent, NewsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [
