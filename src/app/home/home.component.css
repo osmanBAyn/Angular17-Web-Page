@@ -17,3 +17,6 @@ app-navbar i{
 app-navbar i:hover{
     color: #22D3EE;
 }
+#g-cont{
+    z-index: -101;
+}

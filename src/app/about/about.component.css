@@ -1,0 +1,26 @@
+#about-cont{
+    background-color: #fff;
+    padding-top: 5rem;
+}
+#sb{
+    background-color: #000;
+    width: 3rem;
+    height: 0.1rem;
+}
+#inner-cont{
+    letter-spacing: 0.1rem;
+}
+#text-area{
+    margin-top: 2rem;
+    border-left: 2px solid #C60619;
+    padding-left: 1rem;
+}
+#fontW{
+    font-weight: 500;
+}
+#content-cont{
+    width: 30rem;
+}
+#about-content{
+    line-height: 1.5rem;
+}

@@ -1,24 +1,20 @@
-<div class="flex flex-col gap-12">
-  <div #home>
-    <app-home></app-home>
+<div class="flex flex-col">
+  <div id="home" #home>
+    <div class="background-animation"><app-home></app-home></div>
+    
   </div>
-  <div #firstS class="none">
+  <!-- <div #firstS class="none z-10">
     <div #navbar class="fixed w-full">
       <app-navbar>
-        <span logoOrTitle class="font-medium tracking-widest text-xl"
-          >TÜBİTECH # 9 6 9 4</span
-        >
+        <p logoOrTitle class="" #tubitechTextSvg id="svgText">TÜBİTECH</p>
       </app-navbar>
     </div>
-  </div>
+  </div> -->
 
-  <div
-    #secondS
-    id="secondS"
-    class="fixed none flex justify-center items-center w-full h-full"
-  >
-    <img src="../assets/images/logo.png" />
-    <p class="" #tubitechTextSvg id="svgText">TÜBİTECH</p>
+  <div class="" id="about">
+    <app-about></app-about>
+    <app-contact></app-contact>
   </div>
   <div class="spacer"></div>
-</div>
+  <app-footer></app-footer>
+</div>a
