@@ -1,6 +1,35 @@
 #f-cont{
-    background-color: #000 ;
-    height: 10rem;
+    background-color: #2c2f30 ;
+    height: 30rem;
     width: 100%;
+    border-top: 1px solid #22D3EE; 
+}
+#font{
+    font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+#r-cont{
+
+}
+#social-media div i{
+    margin : .5rem
+}
+#f-cont > div{
+    margin-top: 5rem ;
+}
+#footer-menu{
+    color: #22D3EE;
+}
+#w-cont{
+    height: 30rem;
+    width: 100%;
+    background-color: #2c2f30;
+    color : white;
+}
+#b-r{
+    width: 50%;
+    border-top: 5px solid #8b959711;
     
 }
