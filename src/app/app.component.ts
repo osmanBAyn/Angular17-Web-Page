@@ -22,11 +22,12 @@ import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewsComponent } from './news/news.component';
+import {PerfectionComponent} from "./perfection/perfection.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, HomeComponent,AboutComponent,ContactComponent, FooterComponent, NewsComponent],
+  imports: [RouterOutlet, NavbarComponent, HomeComponent, AboutComponent, ContactComponent, FooterComponent, NewsComponent, PerfectionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   animations: [
@@ -108,6 +109,6 @@ export class AppComponent {
   //   //   'opacity',
   //   //   `${(y - 300) / 50}`
   //   // );
-    
+
   // }
 }
