@@ -1,12 +1,21 @@
 <div class="flex flex-col items-center gap-10 mt-40 mb-10">
-    <div class="flex items-center">
-        <div class="line"></div>
-        <div class="text-4xl font-500 mx-5">Son Gönderiler</div>
-        <div class="line"></div>
-    </div>
-    <div class="flex w-full justify-evenly">
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-    </div>
+      <div class="flex items-center">
+          <div class="line"></div>
+          <div class="text-4xl font-500 mx-5">Son Gönderiler</div>
+          <div class="line"></div>
+      </div>
+  <div id="wrapper" class="flex justify-center items-center">
+    <i (click)="arrowClick('left')" id="left" class="fa-solid fa-arrow-left fa-2xl"></i>
+    <ul #carousel class="w-5/6 carousel">
+
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+    </ul>
+    <i (click)="arrowClick('right')" class="fa-solid fa-arrow-right fa-2xl"></i>
+  </div>
 </div>
+

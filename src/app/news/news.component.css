@@ -1,0 +1,32 @@
+.carousel{
+  background: #F4F5F7;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  grid-auto-columns: calc((100%/3));
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+#wrapper i{
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor : pointer;
+
+
+}
+#wrapper i:last-child{
+  right : 50px;
+}
+#wrapper i:first-child{
+  left : 25px;
+}
