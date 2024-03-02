@@ -1,7 +1,6 @@
 .card-container{
     display: flex;
     flex-direction: column;
-
     width: 95%;
     height: 100%;
   /*  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
@@ -10,6 +9,7 @@
     overflow: hidden;
   scroll-snap-align: start;
 }
+
 .card-img{
     height: 40%;
     width: 100%;

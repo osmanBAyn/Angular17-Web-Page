@@ -1,7 +1,7 @@
 .half-circle{
     background-color: #22d3ee;
-    width: 600px;
-    height: 300px;
+    width: 75%;
+    height: 80%;
     border-radius: 450px 450px 0 0;
     box-shadow: 0 0 0 10px #22d3ee44,
     0 0 100px #22d3ee,
@@ -19,4 +19,18 @@ app-navbar i:hover{
 }
 #g-cont{
     z-index: -101;
+}
+.marginleft{
+  margin-left:15% ;
+}
+@media only screen and (max-width: 600px) {
+  app-navbar {
+    display: none;
+  }
+  #posts{
+    display: none;
+  }
+  #g-cont{
+    padding-top: 5% ;
+  }
 }

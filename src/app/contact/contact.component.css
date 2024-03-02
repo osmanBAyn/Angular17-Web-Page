@@ -1,0 +1,45 @@
+#contact-cont{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+#contact-cont img{
+  background:#F4F5F7;
+}
+div{
+  background: #F4F5F7;
+}
+.contact-card{
+  width: 30%;
+  height: 100%;
+  background: #FFFFFF;
+  gap : 2rem;
+  padding: 3%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.contact-card span{
+  font-size: large;
+  font-weight: 500;
+}
+.blue-col{
+  color : #3E8896;
+}
+.contact-card p{
+  text-align: center;
+}
+#wrapper{
+  padding: 3%;
+}
+@media only screen and (max-width: 600px) {
+  .contact-card{
+    width: 80%;
+  }
+  #contact-cont{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+  }
+}
